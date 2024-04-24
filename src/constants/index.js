@@ -6,13 +6,11 @@ import {
   tailwind,
   git,
   figma,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   watchlist,
   quizzical,
   tenzies,
+  adars,
+  punaise,
   wordpress,
 } from "../assets";
 
@@ -66,7 +64,69 @@ const technologies = [
   },
 ];
 
+const wordpressProjects = [
+  {
+    name: "ADARS",
+    description:
+      "Presenting a WordPress website crafted for the Dominican Association of Health Risk Administrators, highlighting their commitment to quality healthcare services. The site provides intuitive navigation and informative content in healthcare industry.",
+    tags: [
+      {
+        name: "wordpress",
+        color: "wordpress-gradient",
+      },
+      {
+        name: "elementor",
+        color: "elementor-gradient",
+      },
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: adars,
+    source_code_link: "https://adars.org.do/",
+  },
+  {
+    name: "Punaise de Lit",
+    description:
+      "Introducing a WordPress website developed for a leading French vacuum company, showcasing their innovative products and cutting-edge technology. The site offers visitors a comprehensive look into the company's services and solutions.",
+    tags: [
+      {
+        name: "wordpress",
+        color: "wordpress-gradient",
+      },
+      {
+        name: "elementor",
+        color: "elementor-gradient",
+      },
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: punaise,
+    source_code_link: "https://xrvap.com/punaisesdelit/",
+  },
+];
+
 const projects = [
+  {
+    name: "Quizzical Trivia",
+    description:
+      "The single-page app, which fetches data from the Open Trivia DB, empowers users to select their preferred category and seamlessly engage in the quiz, offering an interactive and personalized trivia experience.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "lightblue-text-gradient",
+      },
+    ],
+    image: quizzical,
+    source_code_link: "https://github.com/gabycode/quizzicalTrivia",
+  },
   {
     name: "Movie Watchlist",
     description:
@@ -89,26 +149,9 @@ const projects = [
     source_code_link: "https://github.com/gabycode/movie-watchlist-api",
   },
   {
-    name: "Quizzical Trivia",
-    description:
-      "The single-page app, which fetches data from the Open Trivia DB, empowers users to select their preferred category and seamlessly engage in the quiz, offering an interactive and personalized trivia experience.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "lightblue-text-gradient",
-      },
-    ],
-    image: quizzical,
-    source_code_link: "https://github.com/gabycode/quizzicalTrivia",
-  },
-  {
     name: "Tenzies Game",
     description:
-      "Tenzies, an exhilarating dice game, invites players to rapidly match dice faces, fostering an engaging and competitive atmosphere perfect for group entertainment and thrilling gameplay.",
+      "Tenzies, an exhilarating dice game, invites players to rapidly match dice faces, fostering an engaging and competitive atmosphere perfect for group entertainment and thrilling gameplay, or if necesarry, you can play by yourself.",
     tags: [
       {
         name: "html",
@@ -127,4 +170,4 @@ const projects = [
   },
 ];
 
-export { technologies, projects };
+export { technologies, projects, wordpressProjects };
