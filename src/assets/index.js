@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import eye from "./eye.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -22,12 +23,15 @@ import tesla from "./company/tesla.png";
 import watchlist from "./watchlist.jpg";
 import quizzical from "./quizzical.png";
 import tenzies from "./tenzies.png";
+import adars from "./adars.png";
+import punaise from "./punaise.png";
 
 export {
   logo,
   mobile,
   web,
   github,
+  eye,
   menu,
   close,
   css,
@@ -45,4 +49,6 @@ export {
   watchlist,
   quizzical,
   tenzies,
+  adars,
+  punaise,
 };
