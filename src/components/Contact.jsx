@@ -3,6 +3,8 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
+import { linkedin, github, gmail } from "../assets";
+
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -63,6 +65,19 @@ const Contact = () => {
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in toch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <div className="flex flex-row gap-4">
+          <a
+            href="https://www.linkedin.com/in/gabriella-rosario/"
+            target="_blank">
+            <img src={linkedin} alt={linkedin} className="w-9" />
+          </a>
+          <a href="mailto:gabriellarosario72@gmail.com" target="_blank">
+            <img src={gmail} alt={gmail} className="w-9" />
+          </a>
+          <a href="https://github.com/gabycode" target="_blank">
+            <img src={github} alt={github} className="w-10" />
+          </a>
+        </div>
 
         <form
           ref={formRef}
