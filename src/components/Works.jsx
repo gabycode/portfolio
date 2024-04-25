@@ -16,7 +16,8 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    // <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
@@ -51,7 +52,8 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </div>
+    // </motion.div>
   );
 };
 
@@ -102,20 +104,20 @@ const WordpressProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Projects</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
+      {/* <motion.div variants={textVariant()}> */}
+      <p className={styles.sectionSubText}>My Projects</p>
+      <h2 className={styles.sectionHeadText}>Projects.</h2>
+      {/* </motion.div> */}
 
       <div className="w-full flex">
-        <motion.p
+        {/* <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          The following projects are a showcase of my skills and abilities,
-          demonstrating my expertise using a variety of tools to create
-          user-experiences and applications. Dive into a world where code meets
-          creativity in my portfolio.
-        </motion.p>
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"> */}
+        The following projects are a showcase of my skills and abilities,
+        demonstrating my expertise using a variety of tools to create
+        user-experiences and applications. Dive into a world where code meets
+        creativity in my portfolio.
+        {/* </motion.p> */}
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
