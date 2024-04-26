@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
       </div>
       {/* {isLargeScreen && ( */}
-      <div className="absolute top-[35rem] w-full flex justify-center items-center z-50 md:top-[50rem]">
+      <div className="absolute top-[35rem] w-full flex justify-center items-center z-50 md:top-[35rem] 2xl:top-[50rem]">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
