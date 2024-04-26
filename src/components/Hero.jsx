@@ -9,7 +9,7 @@ const Hero = () => {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      setIsLargeScreen(width >= 1024);
+      setIsLargeScreen(width >= 1600);
     };
     window.addEventListener("resize", handleResize);
     handleResize();
@@ -38,23 +38,39 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      {/* {isLargeScreen && ( */}
-      <div className="absolute top-[35rem] w-full flex justify-center items-center z-50 md:top-[35rem] 2xl:top-[50rem]">
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.div
-              animate={{ y: [0, 24, 0] }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
-          </div>
-        </a>
-      </div>
-      {/* )} */}
+      {isLargeScreen ? (
+        <div className="absolute top-[50rem] w-full flex justify-center items-center z-50 ">
+          <a href="#about">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+              <motion.div
+                animate={{ y: [0, 24, 0] }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className="w-3 h-3 rounded-full bg-secondary mb-1"
+              />
+            </div>
+          </a>
+        </div>
+      ) : (
+        <div className="absolute top-[35rem] w-full flex justify-center items-center z-50 ">
+          <a href="#about">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+              <motion.div
+                animate={{ y: [0, 24, 0] }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className="w-3 h-3 rounded-full bg-secondary mb-1"
+              />
+            </div>
+          </a>
+        </div>
+      )}
     </section>
   );
 };
