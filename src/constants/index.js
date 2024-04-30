@@ -126,6 +126,7 @@ const projects = [
     ],
     image: quizzical,
     source_code_link: "https://github.com/gabycode/quizzicalTrivia",
+    live_preview_link: "https://gabycode.github.io/quizzicalTrivia/",
   },
   {
     name: "Movie Watchlist",
@@ -147,6 +148,7 @@ const projects = [
     ],
     image: watchlist,
     source_code_link: "https://github.com/gabycode/movie-watchlist-api",
+    live_preview_link: "https://gabycode.github.io/movie-watchlist-api/",
   },
   {
     name: "Tenzies Game",
@@ -167,6 +169,8 @@ const projects = [
       },
     ],
     image: tenzies,
+    source_code_link: "https://github.com/gabycode/tenzies-game",
+    live_preview_link: "https://gabycode.github.io/tenzies-game/",
   },
 ];
 
